@@ -23,7 +23,7 @@ export default function BookList() {
 				>{ele.bookTitle}</td>
 				<td>{ele.authorName}</td>
 				<td>{ele.ISBN}</td>
-				<td >
+				<td className="deletBookTd">
 					<div 
 						onClick={(e) => {
 							setBookListData((prev:any) => {

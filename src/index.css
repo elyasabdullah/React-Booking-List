@@ -7,7 +7,7 @@
   margin:0;
 }
 body {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
 }
 .App {
   min-height: 100vh;
@@ -74,6 +74,7 @@ li {
   padding:0.5rem;
   padding-left:5px;
   border-radius:5px;
+  font-size: 15px;
 }
 .inputField form > div input:not(input[type='button']).light {
   background-color: rgb(186, 206, 210);
@@ -138,6 +139,11 @@ tr td:first-child.completed {
 tr td:first-child {
   cursor:pointer;
 }
+tr .deletBookTd {
+  position: absolute;
+  right:10px;
+  top:20%;
+}
 .deleteBook {
   position: absolute;
   top: 20%;
@@ -156,5 +162,5 @@ tr td:first-child {
   transform: rotate(45deg);
 }
 .deleteBook span:nth-child(2) {
-  transform: translateY(-8px) rotate(-45deg);
+  transform: translateY(-7.5px) rotate(-45deg);
 }
